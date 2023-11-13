@@ -28,7 +28,6 @@ body {
 /* Navigation Styles */
 .nav-header {
   display: flex;
-  border: solid red 1px;
   justify-content: flex-start;
 }
 
@@ -36,9 +35,9 @@ body {
   color: #000000;
   font-size: 48px;
   font-family: "Imperial Script", cursive;
-  border: solid red 1px;
+  /* border: solid red 1px; */
 
-  text-align: left;
+  text-align: center;
 }
 
 .navigation {
@@ -47,9 +46,6 @@ body {
   justify-content: flex-start;
   align-items: center;
   gap: 50px;
-  /* height: 100%; */
-  border: solid red 1px;
-  /* width: 100%; */
 }
 
 .navigation a {
@@ -93,6 +89,24 @@ body {
 }
 
 /* Memo Box Styles */
+
+/* Learn More Button Styles */
+button {
+  background: #e50a0a;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+  background: #ff3333;
+}
+
 .memo-box {
   text-align: center;
 }
@@ -110,19 +124,6 @@ body {
   margin-bottom: 20px;
 }
 
-/* Learn More Button Styles */
-button {
-  background: #e50a0a;
-  color: #fff;
-  font-size: 18px;
-  font-weight: 700;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
-  transition: background-color 0.3s, color 0.3s;
-}
-
-button:hover {
-  background: #ff3333;
+.manick-picture {
+  background-image: url("/picture/manick_picture.png");
 }
