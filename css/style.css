@@ -30,14 +30,15 @@ body {
   width: 100%;
   display: flex;
   border: solid red 1px;
+  justify-content: flex-start;
 }
 
-.logo-albert-manick {
+.header {
   color: #000000;
   font-size: 48px;
   font-family: "Imperial Script", cursive;
   border: solid red 1px;
-  width: 50%;
+  /* width: 5%; */
   text-align: center;
 }
 
@@ -49,7 +50,7 @@ body {
   gap: 50px;
   height: 100%;
   border: solid red 1px;
-  width: 100%;
+  /* width: 100%; */
 }
 
 .navigation a {
@@ -59,6 +60,13 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 18px;
   transition: color 0.3s;
+  width: 70%;
+}
+.header-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
 }
 
 .navigation a:hover {
@@ -89,7 +97,7 @@ body {
 }
 
 /* Learn More Button Styles */
-.learn_more button {
+button {
   background: #e50a0a;
   color: #fff;
   font-size: 18px;
@@ -101,6 +109,6 @@ body {
   transition: background-color 0.3s, color 0.3s;
 }
 
-.learn_more button:hover {
+button:hover {
   background: #ff3333;
 }
