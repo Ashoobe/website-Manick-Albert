@@ -1,0 +1,60 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{% block title %}Manick Albert{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'Books/css/styles.css' %}" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Calligraffitti&family=Imperial+Script&family=Roboto:ital,wght@0,100;0,300;1,100;1,300;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="welcome-page">
+      <div class="welcome-page-body">
+        <div class="nav-header">
+          <div class="header">
+            <div class="logo-albert-manick">Albert Manick</div>
+          </div>
+          <nav class="header-navigation">
+            <ul class="navigation">
+              <li class="home"><a href="#">Home</a></li>
+              <li class="about"><a href="#">About</a></li>
+              <li class="contact"><a href="#">Contact</a></li>
+              <li class="purchase"><a href="#">Purchase</a></li>
+            </ul>
+            <button class="button">Login</button>
+          </nav>
+        </div>
+        <div class="welcome-page-body-content">
+          <div class="welcome-page-pictures">
+            <div class="manick-picture">
+              <img src="/picture/manick_picture.png" alt="" />
+            </div>
+            <div class="backgroun-picture"></div>
+          </div>
+
+          <!-- <div class="memo-box">
+            <div class="memo-title">
+              <h1>My Soul, Laid Bare... Why Not?</h1>
+            </div>
+
+            <p class="memo">
+              This pamphlet can be seen as a way for me to show to the reader
+              that life can be lived in many ways. Whether one lives within
+              oneself or as an extrovert, I think we can all relate in many
+              ways.
+            </p>
+          </div> -->
+          <!-- <div class="button learn_more">
+            <button>Learn More</button>
+          </div> -->
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
