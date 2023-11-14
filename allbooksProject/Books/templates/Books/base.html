@@ -5,11 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{% block title %}Manick Albert{% endblock %}</title>
-    <link rel="stylesheet" href="{% static '/Books/css/styles.css' %}" />
-    <link
-      rel="stylesheet"
-      href="/allbooksProject/Books/static/Books/css/styles.css"
-    />
+    <link rel="stylesheet" href="{% static 'Books/css/styles.css' %}" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -18,6 +14,7 @@
     />
   </head>
   <body>
+    <header>
     <!-- This is the header Navigation  -->
     <div class="header">
       <div class="logo-albert-manick">
@@ -33,40 +30,12 @@
       </nav>
       <button class="button">Login</button>
     </div>
+  </header>
     <!-- -------------------------------------- -->
-    <main>
-      <div class="welcome-page">
-        <div class="welcome-page-pictures">
-          <div class="manick-picture">
-            <img
-              src="/allbooksProject/Books/static/Books/images/manick_picture.png"
-              alt="Manick Albert portrait picture"
-            />
-          </div>
-          <div class="backgroun-picture">
-            <img
-              src="/allbooksProject/Books/static/Books/images/image1.png"
-              alt=""
-            />
-          </div>
-        </div>
-
-        <!-- <div class="memo-box">
-          <div class="memo-title">
-            <h1>My Soul, Laid Bare... Why Not?</h1>
-          </div>
-
-          <p class="memo">
-            This pamphlet can be seen as a way for me to show to the reader
-            that life can be lived in many ways. Whether one lives within
-            oneself or as an extrovert, I think we can all relate in many
-            ways.
-          </p>
-        </div> -->
-        <!-- <div class="button learn_more">
-          <button>Learn More</button>
-        </div> -->
-      </div>
-    </main>
+  <main>
+    {% block content %}
+    
+    {% endblock %}
+  </main>
   </body>
 </html>
