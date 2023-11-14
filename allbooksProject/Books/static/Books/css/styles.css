@@ -78,14 +78,14 @@ body {
 
 button {
   height: 50px;
-  width: 150px;
+  width: 250px;
   margin: auto 0;
   background: #e50a0a;
   color: #fff;
   font-size: 18px;
   padding: 10px 20px;
   border: none;
-  border-radius: 10px;
+  /* border-radius: 10px; */
   cursor: pointer;
   transition: background-color 0.5s;
 }
@@ -126,15 +126,37 @@ button:hover {
 
 .memo {
   width: 35%;
-  margin: auto;
+  margin: 10px auto;
   text-align: justify;
   padding: 5px;
   line-height: 1.5;
-  color: white;;
+  color: white;
+
 
 }
 
-.button learn_more{
+/* THIS IS THE FOOTER STYLE */
 
+footer{
+  background-color: rgb(37, 36, 36);
+  color: white;
+  text-align: left;
+  padding: 15px;
+  line-height: 2;
 }
 
+footer a{
+  text-decoration: none;
+  color: white;
+}
+
+.footer-content{
+  /* border: red solid 1px; */
+  width: 12%;
+  margin: auto;
+}
+
+.info{
+  width: 100%;
+  text-align: right;
+}

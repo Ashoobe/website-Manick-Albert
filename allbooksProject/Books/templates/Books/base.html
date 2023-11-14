@@ -22,13 +22,13 @@
       </div>
       <nav class="header-navigation">
         <ul class="navigation">
-          <li class="home"><a href="#">Home</a></li>
+          <li class="home"><a href="{% url 'home' %}">Home</a></li>
           <li class="about"><a href="#">About</a></li>
           <li class="contact"><a href="#">Contact</a></li>
           <li class="purchase"><a href="#">Purchase</a></li>
         </ul>
       </nav>
-      <button class="button">Login</button>
+      <button class="button"><a href="{% url 'login' %}">Login</a></button>
     </div>
   </header>
     <!-- -------------------------------------- -->
@@ -37,5 +37,22 @@
     
     {% endblock %}
   </main>
+  <footer>
+    <div class="footer-content">
+    
+    <p>
+      Contact us for any information
+    </p>
+    <p >
+      Phone: <a class="info" href="tel:2547688831"> +1 (254) 768-8831</a>
+    </p>
+    <p >
+      Email: <a href="mailto: manickalbert@manickalbert.com"> info@manickalbert.com</a>
+    </p>
+    <p>
+      @2023 All rights reserved
+    </p>
+    </div>
+  </footer>
   </body>
 </html>
