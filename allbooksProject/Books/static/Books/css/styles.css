@@ -5,7 +5,6 @@ font-family: 'Roboto', sans-serif;
 */
 
 /* Reset and Box Sizing */
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -110,21 +109,32 @@ button:hover {
   align-items: center;
   text-align: center;
   justify-content: center;
-  background-image: url("/allbooksProject/Books/static/Books/images/background-picture.png");
+  background-image: url("/static/Books/images/background-picture.png");
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
 }
 
 .memo-title {
-  left: 20px;
-  width: 40%;
+  width: 35%;
+  padding: 5px;
   margin: auto;
   text-align: left;
   color: white;
+
 }
+
 .memo {
-  width: 50%;
+  width: 35%;
   margin: auto;
-  border: red solid 1px;
+  text-align: justify;
+  padding: 5px;
+  line-height: 1.5;
+  color: white;;
+
 }
+
+.button learn_more{
+
+}
+
