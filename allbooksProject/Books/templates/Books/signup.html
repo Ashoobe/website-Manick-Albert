@@ -4,10 +4,7 @@
     <main>
         <div class="login-box">
             <div class="login-box-content">
-                <h2>
-                    Login
-                </h2>
-                <p>Welcome back</p>
+                <p>Create Account</p>
            
                 <div class="bar-separation">
                     <p>or</p>
@@ -18,11 +15,11 @@
                         <!-- <label for="email">Email</label> -->
                         {% for field in form %}
                         {% if field.label == "Username" %}
-                            <input placeholder="Username" name="{{ field.name }}" id="{{ field.id_for_label }}" type="{{ field.field.widget.input_type }}" required>
+                            <input placeholder={{ field.label }} name="{{ field.name }}" id="{{ field.id_for_label }}" type="{{ field.field.widget.input_type }}" required>
                             <!--<input placeholder="Email" type="text" id="email" name="email" required> -->
                         {% else %}
                             <!-- <label for="password">Password</label> -->
-                            <input placeholder="Password" name="{{ field.name }}" id="{{ field.id_for_label }}" type="{{ field.field.widget.input_type }}" required>
+                            <input placeholder={{ field.label }} name="{{ field.name }}" id="{{ field.id_for_label }}" type="{{ field.field.widget.input_type }}" required>
                             <!--<input type="password" id="password" placeholder="Password" name="password" required> -->
                         {% endif %}
                         {% if field.errors %}
@@ -34,9 +31,8 @@
                         {% endif %}
                         {% endfor %}
 
-                        <button class="login-button" type="submit">Login</button>
-                        <a href="#">Forgot your password?</a>
-                        <p>Don't have an account yet? <a href="{% url 'signup' %}"> Sign up </a>
+                        <button class="login-button" type="submit">Sign Up</button>
+                        <a href="{% url 'login' %}"> Do have an account? Login</a>
                     </form>
                 </div>
             </div>
