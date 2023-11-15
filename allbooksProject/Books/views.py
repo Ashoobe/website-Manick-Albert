@@ -11,6 +11,12 @@ class SignUpView(generic.CreateView):
 
 def home(request):
     return render(request, "Books/index.html")
+
+def forgot_password(request):
+    return render(request, "Books/forgotPassword.html")
+
+def purchase(request):
+    return render(request, "Books/purchase.html")
 '''
 def login(request):
     return render(request, "Books/login.html")
