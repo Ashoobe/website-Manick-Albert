@@ -1,0 +1,32 @@
+{% extends "Books/base.html" %}
+{% block content %}
+<body>
+    <main>
+        <div class="login-box">
+            <div class="login-box-content">
+                <h2>
+                    Login
+                </h2>
+                <p>Welcome back</p>
+           
+                <div class="bar-separation">
+                    <p>or</p>
+                </div>
+                <div class="login-container">
+                    <form action="">
+                        <!-- <label for="email">Email</label> -->
+                        <input placeholder="Email" type="text" id="email" name="email" required>
+
+                        <!-- <label for="password">Password</label> -->
+                        <input type="password" id="password" placeholder="Password" name="password" required>
+
+                        <button class="login-button" type="submit">Login</button>
+                        <a href="#">Forgot your password?</a>
+                        <p>Don't have an account yet?<a href="#">Sign up</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+{% endblock %}
