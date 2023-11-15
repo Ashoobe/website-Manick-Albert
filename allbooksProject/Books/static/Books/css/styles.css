@@ -25,7 +25,6 @@ body {
 
 .logo-albert-manick a {
   text-decoration: none;
-
   color: #000000;
   font-size: 48px;
   font-family: "Imperial Script", cursive;
@@ -83,16 +82,19 @@ button {
   background: #e50a0a;
   color: #fff;
   font-size: 18px;
-  padding: 10px 20px;
   border: none;
-  /* border-radius: 10px; */
   cursor: pointer;
   transition: background-color 0.5s;
 }
 
 button a{
   text-decoration: none;
+  display: flex;
   color: white;
+  padding: 14px 0;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
 }
 
 button:hover {
@@ -184,7 +186,7 @@ footer a{
 .login-box-content {
   display: flex;
   flex-direction: column;
-  width: 300px;
+  width: 700px;
   height: 500px;
   align-items: center;
   justify-content: center;
@@ -211,7 +213,7 @@ footer a{
 .bar-separation::after {
   content: '';
   flex: 1;
-  border-bottom: 1px solid #000; /* Change the color as needed */
+  border-bottom: 1px solid #000; 
   margin: 0 10px;
 
 }
@@ -221,6 +223,7 @@ footer a{
   width: 100%;
   margin-top: 20px;
 }
+
 
 .login-container form {
   display: flex;
@@ -254,8 +257,14 @@ form a:hover{
 .login-container form input {
   padding: 8px;
   margin-bottom: 10px;
-  border: 1px solid #ccc; 
+  border: none;
+  border-bottom: 1px solid #ccc; 
   outline: none; 
+}
+
+.login-container form input:hover{
+  border-bottom: 1px solid #474747; 
+
 }
 
 .login-container form button {
