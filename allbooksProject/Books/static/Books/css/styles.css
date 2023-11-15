@@ -61,17 +61,18 @@ body {
 .navigation a:hover {
   text-decoration: underline;
 }
-.home {
+
+.nav-selected {
   background-color: black;
   padding: 10px;
   cursor: pointer;
   transition: background-color 0.5s;
 }
 
-.home:hover {
+.nav-selected:hover {
   background-color: red;
 }
-.home a {
+.nav-selected a {
   color: white;
 }
 
@@ -167,6 +168,9 @@ footer a{
   width: 100%;
   text-align: right;
 }
+
+
+
 /* -------------------------------------------------------- */
 
 /* THIS IS THE LOGIN STYLE */
@@ -287,6 +291,7 @@ footer a{
 .login-container form p {
   margin: 10px 0;
 }
+
 
 
 
