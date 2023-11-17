@@ -20,10 +20,18 @@
       <div class="logo-albert-manick">
         <a href="base.html">Albert Manick</a>
       </div>
+
+      <!-- Hamburger button -->
+      <div class="hamburger-menu" onclick="toggleMobileNavigation()">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+
       <nav class="header-navigation">
         <ul class="navigation">
           <li class="nav-selected"><a href="{% url 'home' %}">Home</a></li>
-          <li class="purchase"><a href="{% url 'purchase' %}">Purchase</a></li>
+          <li class="purchase"><a href="#">Purchase</a></li>
           <li class="about"><a href="#">About</a></li>
           <li class="purchase"><a href="#">Blog</a></li>
           <li class="contact"><a href="#">Contact</a></li>
@@ -55,5 +63,11 @@
     </p>
     </div>
   </footer>
+  <script>
+    function toggleMobileNavigation() {
+        var mobileNav = document.querySelector('.mobile-navigation');
+        mobileNav.style.display = (mobileNav.style.display === 'block' ? 'none' : 'block');
+    }
+</script>
   </body>
 </html>
