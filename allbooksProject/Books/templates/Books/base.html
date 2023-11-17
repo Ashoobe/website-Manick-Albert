@@ -30,11 +30,21 @@
 
       <nav class="header-navigation">
         <ul class="navigation">
-          <li class="nav-selected"><a href="{% url 'home' %}">Home</a></li>
-          <li class="purchase"><a href="{% url 'purchase' %}">Purchase</a></li>
-          <li class="about"><a href="#">About</a></li>
-          <li class="blog"><a href="#">Blog</a></li>
-          <li class="contact"><a href="#">Contact</a></li>
+          <li class="{% if request.resolver_match.url_name == 'home' %}nav-selected{% endif %}">
+            <a href="{% url 'home' %}">Home</a>
+          </li>
+          <li class="{% if request.resolver_match.url_name == 'purchase' %}nav-selected{% endif %}">
+            <a href="{% url 'purchase' %}">Purchase</a>
+          </li>
+          <li class="{% if request.resolver_match.url_name == 'about' %}nav-selected{% endif %}">
+            <a href="#">About</a>
+          </li>
+          <li class="{% if request.resolver_match.url_name == 'blog' %}nav-selected{% endif %}">
+            <a href="#">Blog</a>
+          </li>
+          <li class="{% if request.resolver_match.url_name == 'contact' %}nav-selected{% endif %}">
+            <a href="#">Contact</a>
+          </li>
         </ul>
       </nav>
       <button><a href="{% url 'login' %}">Login</a></button>
