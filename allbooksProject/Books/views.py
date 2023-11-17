@@ -20,6 +20,8 @@ def purchase(request):
 
 def about(request):
     return render(request, "Books/about.html")
+def contact(request):
+    return render(request, "Books/contact.html")
 '''
 def login(request):
     return render(request, "Books/login.html")
