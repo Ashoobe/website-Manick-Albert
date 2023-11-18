@@ -296,30 +296,105 @@ footer a{
 /* THIS IS THE CONTACT STYLE */
 
 .contact-box{
+  display: flex;
+  flex-direction: column;
   height: 92vh;
-  border: red 1px solid;
   width: 100%;
-  background-color: red;
+  align-items: center;
+  justify-content: center;
 }
 
 .contact-box h2{
-  /* font-weight: 300;
-  /* text-align: center; */
-  /* border: red 1px solid; */
-  /* color: red; */ */
+  margin: 50px 0 0 0;
+font-weight: 300;
+  text-align: center;
+  font-size: 30px;
   
 
 }
 
 .contact-box-content{
+  position: relative;
   display: flex;
-  width: 100%;
-  /* border: 1px solid red; */
+  width: 65%;
+  height: 500px;
+  margin: auto;
 }
 
 .book_picture{
-  background-image: url("/static/Books/images/.book_picture");
+  position: absolute;
+  background-image: url("/static/Books/images/book_picture.png");
+  width: 50%;
+  height: 520px;
+  left:0;
+}
+
+.contact-form{
+  position: absolute;
+  right: 10px;
+  margin-right: 20px;
+  width: 600px;
+  height: 520px;
+  background-color: #CF980A;
+  box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.468);
+  border-radius: 40px;
+}
+
+.contact-form h3{
+  margin: 25px;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 300;
+  color: white;
+  
+}
+
+.form-row{
+  display: flex;
+  gap: 10px;
+  height: 80px;
+
+}
+
+.contact-form form input{
+  margin: auto;
+  width: 40%;
+  height: 50px;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid white;
+  background-color: #CF980A;
+  color: white;
+}
+
+.contact-form input::placeholder{
+  color: rgba(255, 255, 255, 0.522);
+  font-size: 15;
+}
+
+.contact-form textarea{
+  background-color: #ecc971;
+  display: block;
+  border: none;
+  border-radius: 10px;
+  width: 500px;
   height: 200px;
+  margin: 20px auto;
+  padding: 15px;
+  
+
+}
+.contact-button{
+  margin: auto;
+  background-color: black;
+  width: 400px;
+  transition: color .5s;
+}
+
+.contact-button:hover{
+  background-color: rgb(27, 27, 27);
+  
+
 
 }
 
