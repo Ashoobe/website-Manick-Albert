@@ -1,0 +1,37 @@
+{% extends "Books/base.html" %}
+{% block content %}
+
+<body>
+    <main>
+        <div class="contact-box">
+            <h2>Leave us a message</h2>
+            <div class="contact-box-content">
+                
+                <div class="book_picture">
+                   
+                </div>
+                <div class="contact-form">
+                    <h3>Contact</h3>
+                    <form action="">
+                        <div class="form-row">
+
+                            <input type="text" placeholder="First name" required>
+                            <input type="text" placeholder="Last name" required>
+                        </div>
+                        <div class="form-row">
+                        <input type="text" placeholder="Email" required>
+                        <input type="text" placeholder="Phone Number" required>
+                        </div>
+                        <textarea placeholder="Message" required></textarea>
+                        <button class="contact-button" type="submit">Send</button>
+                    </form>
+
+                </div>
+
+            </div>
+        </div>
+    </main>
+    
+</body>
+
+{% endblock %}
