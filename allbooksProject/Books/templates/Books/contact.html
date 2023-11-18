@@ -1,4 +1,28 @@
 {% extends "Books/base.html" %}
 {% block content %}
-    <h1>This is the contact page</h1>
+
+<body>
+    <main>
+        <div class="contact-box">
+            <h2>Leave us a message</h2>
+            <div class="contact-box-content">
+                <div class="book_picture"></div>
+                <div class="contact-form">
+                    <form action="">
+                        <input type="text" placeholder="First name" required>
+                        <input type="text" placeholder="Last name" required>
+                        <input type="text" placeholder="Email" required>
+                        <input type="text" placeholder="Subject" required>
+                        <textarea placeholder="Message" required></textarea>
+                        <button class="contact-button" type="submit">Send</button>
+                    </form>
+
+                </div>
+
+            </div>
+        </div>
+    </main>
+    
+</body>
+
 {% endblock %}

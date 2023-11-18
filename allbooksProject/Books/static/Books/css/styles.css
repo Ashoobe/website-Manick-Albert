@@ -293,8 +293,34 @@ footer a{
 }
 
 
+/* THIS IS THE CONTACT STYLE */
 
+.contact-box{
+  height: 92vh;
+  border: red 1px solid;
+  width: 100%;
+  background-color: red;
+}
 
+.contact-box h2{
+  /* font-weight: 300;
+  /* text-align: center; */
+  /* border: red 1px solid; */
+  /* color: red; */ */
+  
 
+}
+
+.contact-box-content{
+  display: flex;
+  width: 100%;
+  /* border: 1px solid red; */
+}
+
+.book_picture{
+  background-image: url("/static/Books/images/.book_picture");
+  height: 200px;
+
+}
 
 
