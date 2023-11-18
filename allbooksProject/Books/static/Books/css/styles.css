@@ -156,9 +156,50 @@ button:hover {
   margin: 20px 0;
 }
 
+.peom-dedication{
+  font-style: italic;
+}
+
 .poems{
   display: flex;
+  flex-wrap: wrap;
+  margin: 20px auto 0;
 }
+
+.enjoy-poem h1{
+  text-align: center;
+  font-weight: 500;
+  display: block;
+  width: 100;
+  margin: 50px 0;
+  font-size: 90px;
+}
+
+
+.peoms-divided, .peoms-divided2{
+  flex: 1 1 calc(40% - 20px);
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.5;
+  
+
+}
+.peoms-divided2 {
+  margin-top: 20px; 
+  border-left: 20px solid #CF980A;
+  
+}
+
+.peoms-title{
+  font-size: 25px;
+  padding: 10px;
+  
+}
+
+
+
 
 
 
