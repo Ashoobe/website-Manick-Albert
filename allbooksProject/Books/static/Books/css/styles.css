@@ -158,6 +158,8 @@ button:hover {
 
 .peom-dedication{
   font-style: italic;
+  width: 50%;
+  margin: auto;
 }
 
 .poems{
