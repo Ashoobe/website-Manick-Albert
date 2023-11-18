@@ -140,8 +140,27 @@ button:hover {
   line-height: 1.5;
   color: white;
 
-
 }
+  /* THIS IS THE POEMS STYLE */
+
+  .book-content-text{
+    width: 50%;
+    margin: auto;
+    font-size: 18px;
+    line-height: 2;
+    text-align: center;
+    border-bottom: 5px solid #CF980A;
+  }
+.book-content-text h1{
+  text-align: center;
+  margin: 20px 0;
+}
+
+.poems{
+  display: flex;
+}
+
+
 
 /* THIS IS THE FOOTER STYLE */
 
