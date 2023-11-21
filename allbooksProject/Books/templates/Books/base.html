@@ -37,13 +37,14 @@
             <a href="{% url 'purchase' %}">Purchase</a>
           </li>
           <li class="{% if request.resolver_match.url_name == 'about' %}nav-selected{% endif %}">
-            <a href="#">About</a>
+            <a href="{% url 'about' %}">About</a>
           </li>
           <li class="{% if request.resolver_match.url_name == 'blog' %}nav-selected{% endif %}">
-            <a href="#">Blog</a>
+            <a href="{% url 'blog' %}">Blog</a>
           </li>
+          
           <li class="{% if request.resolver_match.url_name == 'contact' %}nav-selected{% endif %}">
-            <a href="#">Contact</a>
+            <a href="{% url 'contact' %}">Contact</a>
           </li>
         </ul>
       </nav>

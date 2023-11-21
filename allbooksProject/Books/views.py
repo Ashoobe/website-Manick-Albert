@@ -17,6 +17,16 @@ def forgot_password(request):
 
 def purchase(request):
     return render(request, "Books/purchase.html")
+
+def about(request):
+    return render(request, "Books/about.html")
+
+def blog(request):
+    return render(request, "Books/blog.html")
+
+def contact(request):
+    return render(request, "Books/contact.html")
+
 '''
 def login(request):
     return render(request, "Books/login.html")
