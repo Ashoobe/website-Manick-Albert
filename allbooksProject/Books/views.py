@@ -20,6 +20,7 @@ def purchase(request):
 
 def about(request):
     return render(request, "Books/about.html")
+<<<<<<< HEAD
 
 def blog(request):
     return render(request, "Books/blog.html")
@@ -27,6 +28,10 @@ def blog(request):
 def contact(request):
     return render(request, "Books/contact.html")
 
+=======
+def contact(request):
+    return render(request, "Books/contact.html")
+>>>>>>> 50179ff48abff987a95e9a533c2c34ab9ee48a30
 '''
 def login(request):
     return render(request, "Books/login.html")

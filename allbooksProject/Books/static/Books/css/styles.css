@@ -140,8 +140,70 @@ button:hover {
   line-height: 1.5;
   color: white;
 
+}
+  /* THIS IS THE POEMS STYLE */
+
+  .book-content-text{
+    width: 50%;
+    margin: auto;
+    font-size: 18px;
+    line-height: 2;
+    text-align: center;
+    border-bottom: 5px solid #CF980A;
+  }
+.book-content-text h1{
+  text-align: center;
+  margin: 20px 0;
+}
+
+.peom-dedication{
+  font-style: italic;
+  width: 50%;
+  margin: auto;
+}
+
+.poems{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px auto 0;
+}
+
+.enjoy-poem h1{
+  text-align: center;
+  font-weight: 500;
+  display: block;
+  width: 100;
+  margin: 50px 0;
+  font-size: 90px;
+}
+
+
+.peoms-divided, .peoms-divided2{
+  flex: 1 1 calc(40% - 20px);
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.5;
+  
 
 }
+.peoms-divided2 {
+  margin-top: 20px; 
+  border-left: 20px solid #CF980A;
+  
+}
+
+.peoms-title{
+  font-size: 25px;
+  padding: 10px;
+  
+}
+
+
+
+
+
 
 /* THIS IS THE FOOTER STYLE */
 
@@ -293,8 +355,162 @@ footer a{
 }
 
 
+/* THIS IS THE CONTACT STYLE */
+
+.contact-box{
+  display: flex;
+  flex-direction: column;
+  height: 92vh;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-box h2{
+  margin: 50px 0 0 0;
+font-weight: 300;
+  text-align: center;
+  font-size: 30px;
+  
+
+}
+
+.contact-box-content{
+  position: relative;
+  display: flex;
+  width: 65%;
+  height: 400px;
+  margin: auto;
+}
+
+.book_picture{
+  position: absolute;
+  background-image: url("/static/Books/images/book_picture.png");
+  background-repeat: no-repeat;
+  width: 636px;
+  height: 500px;
+  left:0;
+}
+
+.contact-form{
+  position: absolute;
+  right: 80px;
+  margin-right: 20px;
+  width: 500px;
+  height: 510px;
+  background-color: #CF980A;
+  box-shadow: 3px 3px 50px 12px rgba(0, 0, 0, 0.468);
+  border-radius: 40px;
+}
+
+.contact-form h3{
+  margin: 25px 0 0 0;
+  text-align: center;
+  font-size: 35px;
+  font-weight: 300;
+  color: white;
+  
+}
+
+.form-row{
+  display: flex;
+  gap: 10px;
+  height: 70px;
+
+}
+
+.contact-form form input{
+  margin: auto;
+  width: 40%;
+  height: 50px;
+  outline: none;
+  border: none;
+  background-color: #CF980A;
+}
+
+.contact-form input::placeholder{
+  color: rgba(255, 255, 255, 0.522);
+  font-size: 15;
+  padding: 5px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.523);
+  
+
+
+}
+
+.contact-form textarea{
+  background-color: #eecf81;
+  outline: none;
+  display: block;
+  border: none;
+  border-radius: 10px;
+  width: 400px;
+  height: 150px;
+  margin: 50px auto 15px;
+  padding: 15px;
+  
+
+}
+.contact-button{
+  margin: auto 50px;
+  background-color: black;
+  width: 400px;
+  height: 40px;
+  border-radius: 10px;
+  transition: color .5s;
+}
+
+.contact-button:hover{
+  background-color: rgb(27, 27, 27);
+
+}
+
+
+/* THIS IS THE ABOUT STYLE */
+.about-box{
+  position: relative;
+  width:100%;
+  height: auto;
+  margin:100px auto 0;
+  background-color: #cf970a9f;
+  border-top-left-radius: 1000px ;
+  border-top-right-radius: 1000px;
+  
+
+}
+
+.about_manick-picture img{
+  width: 300px !important;
+  height: auto;
+  top:100px;
+  position:relative;
+}
+
+.about-box_text{
+  height: auto;
+  width: 800px;
+  margin: 50px;;
+  padding: 20px;
+ 
 
 
 
+}
+.about-box_content{
+  display: flex;
+  width: 70%;
+  margin: auto;
+}
 
-
+.about-box  h1{
+  font-weight: 500;
+  margin-bottom: 50px;
+}
+.about-box p{
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0.1em;
+  text-align: justify;
+  
+}
