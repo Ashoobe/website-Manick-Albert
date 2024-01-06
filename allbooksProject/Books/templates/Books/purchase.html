@@ -1,8 +1,96 @@
 {% extends "Books/base.html" %}
 {% block content %}
 
-<h1>
-    This is purchase page!
-</h1>
+<body>
+    <h1 class="purchase-title">Purchase</h1>
+    <div class="purchase-box_content">
+      <div class="purchase-box">
+        <div class="purchase-box-book-rated">
+          <img
+            class="purchase-bookCover"
+            src="/static/Books/images/bookCover.png"
+            alt=" Book Cover"
+          />
+          <div class="purchase-stars">
+            <img src="/static/Books/images/star.png" alt="Star" height="40" />
+            <img src="/static/Books/images/star.png" alt="Star" height="40" />
+            <img src="/static/Books/images/star.png" alt="Star" height="40" />
+            <img src="/static/Books/images/star.png" alt="Star" height="40" />
+            <img src="/static/Books/images/star.png" alt="Star" height="40" />
+            
+          </div>
+          <div class="book-title">
+            <p>My Soul, Laid Bare... Why Not?</p>
+          </div>
+
+          <p class="book-writer">Albert Manick</p>
+        </div>
+
+        <div class="book-info">
+          <div class="book-price-box-content">
+            <div class="book-price kindle">
+              <span>Kindle</span></br>
+              <span class="price"> Price: $6.99</span>
+              <a
+                
+                href="https://www.amazon.com/Soul-Laid-Bare-Why-Not-ebook/dp/B0CLC2NZJK/ref=tmm_kin_swatch_0?_encoding=UTF8&qid=1704513331&sr=8-1"
+                target="_blank"><button class="purchase-button">Buy Now</button></a
+              >
+            </div>
+            <div class="book-price paperback" br>
+              <span>Paperback</span> </br>
+              <span class="price"> Price: $19.99</span>
+              <a
+                
+                href="https://www.amazon.com/Soul-Laid-Bare-Why-Not/dp/B0CLZ4JQB3/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=1704513331&sr=8-1"
+                target="_blank"><button class="purchase-button">Buy Now</button></a
+              >
+            </div>
+          </div>
+          <div class="book-description">
+            <p>
+              The title suggests a willingness to reveal my innermost thoughts,
+              emotions, and or vulnerabilities without reservation or
+              hesitation. It reflects an openness and perhaps a challenge to
+              societal norms or personal inhibitions about sharing deep and
+              personal aspects of myself. It implies questioning any hesitations
+              or reservations and being completely open and honest about who I
+              am, and how I feel. My soul laid bare encompasses a sense of
+              boldness or fearlessness in sharing things that are deeply
+              personal and intimate. It also conveys a sense of vulnerability
+              and questioning attitude, in a way, it's like saying "why not
+              share the depths of my soul" with the world.
+            </p>
+
+            <div class="book-details">
+              <h3>Product details</h3>
+              <ul>
+                <li><span class="details-title">ASIN</span>: B0CLZ4JQB3</li>
+                <li>
+                  <span class="details-title">Publisher</span>: Manick Albert
+                  (October 23, 2023)
+                </li>
+                <li><span class="details-title">Language</span>: English</li>
+                <li><span class="details-title">Paperback</span>: 88 pages</li>
+                <li>
+                  <span class="details-title">ISBN-13</span>: 979-8218286958
+                </li>
+                <li>
+                  <span class="details-title">Item Weight</span>: 4.6 ounces
+                </li>
+                <li>
+                  <span class="details-title">Dimensions</span>: 6 x 0.24 x 9
+                  inches
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+</body>
 
 {% endblock %}
