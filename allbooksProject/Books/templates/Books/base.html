@@ -39,15 +39,20 @@
           <li class="{% if request.resolver_match.url_name == 'about' %}nav-selected{% endif %}">
             <a href="{% url 'about' %}">About</a>
           </li>
-          <li class="{% if request.resolver_match.url_name == 'blog' %}nav-selected{% endif %}">
+          {% comment %} <li class="{% if request.resolver_match.url_name == 'blog' %}nav-selected{% endif %}">
             <a href="#">Blog</a>
+          </li> {% endcomment %}
+
+          <li class="{% if request.resolver_match.url_name == 'gallery' %}nav-selected{% endif %}">
+            <a href="{% url 'gallery' %}">Gallery</a>
           </li>
+          
           <li class="{% if request.resolver_match.url_name == 'contact' %}nav-selected{% endif %}">
             <a href="{% url 'contact' %}">Contact</a>
           </li>
         </ul>
       </nav>
-      <button><a href="{% url 'login' %}">Login</a></button>
+      <button class="btns" ><a href="{% url 'login' %}">Login</a></button>
     </div>
   </header>
     <!--  -->
@@ -69,15 +74,17 @@
       Email: <a href="mailto: manickalbert@manickalbert.com"> info@manickalbert.com</a>
     </p>
     <p>
-      @2023 All rights reserved
+      @2024 All rights reserved
     </p>
     </div>
   </footer>
   <script>
     function toggleMobileNavigation() {
-        var mobileNav = document.querySelector('.mobile-navigation');
-        mobileNav.style.display = (mobileNav.style.display === 'block' ? 'none' : 'block');
+      var navigation = document.querySelector('.navigation');
+      navigation.classList.toggle('show-mobile-nav');
     }
+    
+    
 </script>
   </body>
 </html>

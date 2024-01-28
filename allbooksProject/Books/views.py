@@ -27,8 +27,8 @@ def blog(request):
 def contact(request):
     return render(request, "Books/contact.html")
 
-def contact(request):
-    return render(request, "Books/contact.html")
+def gallery(request):
+    return render(request, "Books/gallery.html")
 
 '''
 def login(request):

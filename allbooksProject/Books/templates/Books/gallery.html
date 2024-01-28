@@ -1,0 +1,91 @@
+{% extends "Books/base.html" %}
+{% block content %}
+
+
+<body>
+    <div class="box-alt">
+    <h1 class="alt-content">testin </h1>
+    </div>
+    <div class="container-gallery">
+    <div class="container">
+      <div class="box">
+        <span style="--i: 1"
+          ><img
+          src="/static/Books/images/gallery/BeatenPath.png"
+            width="500px"
+            alt=" The Beaten Path Painting"
+        /></span>
+        <span style="--i: 2"
+          ><img
+          src="/static/Books/images/gallery/BirthOfWoman.png"
+            width="500px"
+            alt="The Birth of Woman Painting"
+        /></span>
+        <span style="--i: 3"
+          ><img
+          src="/static/Books/images/gallery/FoldedCurtain.png"
+            width="500px"
+            alt="The Folder Curtain Painting"
+        /></span>
+        <span style="--i: 4"
+          ><img
+          src="/static/Books/images/gallery/HommageToVanGogh.png"
+            width="500px"
+            alt="The Hommage to Van Gogh Painting"
+        /></span>
+        <span style="--i: 5"
+          ><img src="/static/Books/images/gallery/BabylonSystem.png" width="500px" alt=" The Babylon System Painting"
+        /></span>
+        <span style="--i: 6"
+          ><img src="/static/Books/images/gallery/IshaPortrait.png" width="500px" alt=" Isha Portrait Painting"
+        /></span>
+        <span style="--i: 7"
+          ><img src="/static/Books/images/gallery/Landscape.png" width="500px" alt="The Landscape Painting"
+        /></span>
+        <span style="--i: 8"
+          ><img src="/static/Books/images/gallery/Les-Trous-Dans-Le-Drap-Blanc.png" width="500px" alt=" Les Trous Dans le Drap Blanc Painting"
+        /></span>
+      </div>
+      <div class="btns-gallery-button">
+        <div class="btn prev"></div>
+        <div class="btn next"></div>
+      </div>
+    </div>
+</div>
+<script>
+    let prev = document.querySelector(".prev");
+    let next = document.querySelector(".next");
+    let box = document.querySelector(".box");
+    let imageSpans = document.querySelectorAll(".box span"); // Select spans inside .box
+    let altContent = document.querySelector(".alt-content"); // Select the h1 element
+    let degrees = 0;
+  
+    function updateAltContent() {
+      let totalImages = imageSpans.length;
+      let currentImageIndex = Math.round((360 - degrees) / 45) % totalImages;
+      if (currentImageIndex < 0) {
+        currentImageIndex += totalImages; 
+      }
+      let currentImageAlt = imageSpans[currentImageIndex].querySelector('img').alt;
+      altContent.textContent = currentImageAlt ; 
+    }
+  
+    prev.addEventListener("click", function () {
+      degrees += 45;
+      box.style.transform = `perspective(1000px) rotateY(${degrees}deg)`;
+      updateAltContent();
+    });
+  
+    next.addEventListener("click", function () {
+      degrees -= 45;
+      box.style.transform = `perspective(1000px) rotateY(${degrees}deg)`;
+      updateAltContent();
+    });
+  
+    // Initial call to set the alt content
+    updateAltContent();
+  </script>
+  
+
+  </body>
+{% endblock %}
